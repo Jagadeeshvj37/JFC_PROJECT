@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFC</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQMPRnKNcJnekhTfUF2iaTOJnoYSOFqdc_A&usqp=CAU"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav id="home">
+      <div class="nav-left">
+        <img
+          class="nav-logo"
+          src="jfc_logo.png"
+          alt=""
+          width="50px"
+          height="50px"
+        />
+        <h1>JFC</h1>
+      </div>
+      <div class="nav-right">
+        <a href="#home"><p>Home</p></a>
+        <a href="#menu"> <p>Menu</p></a>
+        <a href="#contact"> <p>Contact</p></a>
+      </div>
+      <div class="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    <!-- container -->
+
+    <div class="container">
+      <div class="container-left">
+        <img src="kfc_banner.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- menu -->
+    <h2 id="menu" class="menu-head animate__animated animate__fadeInLeft">
+      Menu
+    </h2>
+    <div class="menu-container">
+      <div class="menu-list" data-aos="zoom-out-right" data-aos-duration="1000">
+        <img
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT233.jpg?ver=39.79"
+          alt=""
+        />
+        <h2 class="animate__animated animate__fadeInLeft" >Peri Peri Chicken</h2>
+      </div>
+
+      <div class="menu-list" data-aos="flip-left" data-aos-duration="1000">
+        <img
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=39.79"
+          alt=""
+        />
+        <h2 class="animate__animated animate__fadeInLeft">Chicken Burger</h2>
+      </div>
+
+      <div class="menu-list" data-aos="zoom-out-left" data-aos-duration="1000">
+        <img
+          src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT170.jpg?ver=39.79"
+          alt=""
+        />
+        <h2 class="animate__animated animate__fadeInLeft">Chicken Roll</h2>
+      </div>
+    </div>
+
+    <!-- contact -->
+
+    <h1 class="contact-head animate__animated animate__fadeInLeft">Contact</h1>
+    <div id="contact" class="contact-container">
+      <div class="contact-left" data-aos="zoom-out-up" data-aos-duration="10000">
+        <img src="jfc_logo.png" alt="" />
+      </div>
+      <div class="contact-details">
+        <h2>Gmail: <span>abc@gmail.com</span></h2>
+        <h2>Phoneno: <span>1234567890</span></h2>
+      </div>
+    </div>
+  </body>
+  <script>
+    var menu = document.querySelector(".menu");
+    var menu_list = document.querySelector(".nav-right");
+
+    menu.addEventListener("click", () => {
+      menu_list.classList.toggle("showmenu");
+    });
+  </script>
+
+  <!-- aos animation -->
+  <script>
+    AOS.init();
+  </script>
+</html>
